@@ -1,9 +1,13 @@
+---
+icon: line-columns
+---
+
 # AI Columns
 
-AI Columns enable you to dynamically generate unique content for each row in your dataset using LLMs like OpenAI, Anthropic Claude and Google Gemini (coming soon). With AI Columns, you can define a prompt and use [liquid templating](../../basics/core-concept/liquid-templates.md) to reference values from other columns. This setup allows you to send a customized GPT prompt request for each row, with the response automatically written back to your AI Column. The AI Columns materialize in your warehouse as well.&#x20;
+AI Columns enable you to dynamically generate unique content for each row in your dataset using LLMs like OpenAI, Anthropic Claude and Google Gemini (coming soon). With AI Columns, you can define a prompt and use [liquid templating](../../basics/core-concept/liquid-templates.md) to reference values from other columns. This setup allows you to send a customized GPT prompt request for each row, with the response automatically written back to your AI Column. The AI Columns materialize in your warehouse as well.
 
 {% hint style="info" %}
-Try AI Columns for free using trial [credits](../../misc/credits.md)! No need for an API key until your trial credits run out.&#x20;
+Try AI Columns for free using trial [credits](../../misc/credits.md)! No need for an API key until your trial credits run out.
 {% endhint %}
 
 {% embed url="https://youtu.be/5AxWR1QyCos" %}
@@ -16,13 +20,13 @@ Try AI Columns for free using trial [credits](../../misc/credits.md)! No need fo
 4. Summarize product usage among specific features by “high” or “low” to identify upsell fits and run PLG playbooks
 5. Clean up data by removing special characters from a column
 
-checkout our [Recipe Book](prompts-recipe-book.md) for more examples and sample prompts.&#x20;
+checkout our [Recipe Book](prompts-recipe-book.md) for more examples and sample prompts.
 
 #### Pre-requisites
 
 * Dataset should have a Unique ID column
 
-Note : You will need your API key to connect OpenAI (ChatGPT) or Claude once you run out of Census [credits](../../misc/credits.md).&#x20;
+Note : You will need your API key to connect OpenAI (ChatGPT) or Claude once you run out of Census [credits](../../misc/credits.md).
 
 * To create a new OpenAI API key, log into OpenAI and navigate to [Dashboard / API keys](https://platform.openai.com/api-keys) and generate a new Project API Key.
 * To create a new Anthropic API Key, navigate to [Anthropic Console](../../) > Settings > API Keys and generate a new Key.
@@ -37,7 +41,7 @@ If you are a video person, watch [how to create a GPT column](https://youtu.be/5
 
 **Step 3:** Choose a dataset where you want to add a new AI-based column. Make sure the Dataset has a Unique ID column assigned
 
-**Step 4:** Select `Enrich & Enhance` on your top right corner, choose `AI`  and your preferred LLM provider.
+**Step 4:** Select `Enrich & Enhance` on your top right corner, choose `AI` and your preferred LLM provider.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-12-26 at 2.02.19 PM.png" alt=""><figcaption><p>Census Create AI Column</p></figcaption></figure>
 
@@ -71,10 +75,10 @@ This allows you to not only sync these AI-generated columns to your destination 
 AI Columns are currently supported on Snowflake, Redshift, BigQuery, Databricks, and Postgres with more warehouses coming soon.
 {% endhint %}
 
-#### Rate Limits&#x20;
+#### Rate Limits
 
 {% hint style="info" %}
-Requests made by Census to the LLM provider  (ex. OpenAI) are subject to daily rate limits, which may cause the underlying sync to stall. Rate limits can typically be increased by upgrading the tier of your organization with the LLM provider.&#x20;
+Requests made by Census to the LLM provider (ex. OpenAI) are subject to daily rate limits, which may cause the underlying sync to stall. Rate limits can typically be increased by upgrading the tier of your organization with the LLM provider.
 {% endhint %}
 
 For more information, please see the rate limit policies for your specific LLM provider.

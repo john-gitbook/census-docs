@@ -1,6 +1,10 @@
+---
+icon: flask
+---
+
 # Experiments and Analysis
 
-Census makes it easy to understand the shape of the segments you're creating and how they're performing once you've synced them to your destinations.&#x20;
+Census makes it easy to understand the shape of the segments you're creating and how they're performing once you've synced them to your destinations.
 
 ## Setting up Split Tests
 
@@ -10,7 +14,7 @@ Once you've created a segment, you can take advantage of split test experiments 
 
 Split testing enables a number of marketing efforts:
 
-* Create a simple treatment with control group and measure the increased conversion rate over users that received the treatment.&#x20;
+* Create a simple treatment with control group and measure the increased conversion rate over users that received the treatment.
 * Divide a segment into multiple treatments for different channels and compare relative conversion rates of the same segment across each.
 * Use a treatment and control group to "ramp up" a very large campaign over time. Start with 10% of segment and grow the treatment once you're confident it's performing as expected.
 
@@ -24,7 +28,7 @@ One of the most important signals when creating segments is its size. Too big an
 
 When creating segments, Census will show you the estimated segment size based the conditions you've defined. Depending on your warehouse type, Census will automatically refresh the size as more conditions are added or you can refresh it manually as well.
 
-Once your segment has been created, you can visit the **Activity** tab at any point to understand how your segment size has changes over time, including after making changes to the segment definition.&#x20;
+Once your segment has been created, you can visit the **Activity** tab at any point to understand how your segment size has changes over time, including after making changes to the segment definition.
 
 ## Previewing Members
 
@@ -34,7 +38,7 @@ At any point, you can also view a sample of the members of a particular segment 
 
 ## Audience Comparisons
 
-When it's easy to create new segments, you can end up in a world of too many segments and it's hard to tell if a new segment is unique, even if you can see what members look like. In this case, you can compare your segment against any other existing segment by visiting the **Overlap** tab on your segment.&#x20;
+When it's easy to create new segments, you can end up in a world of too many segments and it's hard to tell if a new segment is unique, even if you can see what members look like. In this case, you can compare your segment against any other existing segment by visiting the **Overlap** tab on your segment.
 
 <figure><img src="../../.gitbook/assets/760-b937f5942ce3a9913c2afc4267cebcde96975ff5.gif" alt=""><figcaption></figcaption></figure>
 
@@ -44,6 +48,6 @@ Create customized metrics and track segment and cohort performance over time. Ou
 
 <figure><img src="../../.gitbook/assets/Snag_2f5839b5.png" alt=""><figcaption></figcaption></figure>
 
-For the deepest level of analysis, you can take advantage of [Warehouse Writeback](../sync-monitoring/warehouse-writeback.md), which logs all sync activity back to your data source. You can use this data to determine when users were added and removed from segments in each of the destinations your segment is synced to or the relative conversion performance of users across cohorts.&#x20;
+For the deepest level of analysis, you can take advantage of [Warehouse Writeback](../sync-monitoring/warehouse-writeback.md), which logs all sync activity back to your data source. You can use this data to determine when users were added and removed from segments in each of the destinations your segment is synced to or the relative conversion performance of users across cohorts.
 
 To take advantage of Warehouse Writeback for your analysis, ensure it is enabled on your warehouse connection.

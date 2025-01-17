@@ -1,3 +1,7 @@
+---
+icon: lock-keyhole
+---
+
 # Security & Privacy
 
 ## 🏣 Intro
@@ -50,7 +54,7 @@ Your warehouse reports back to the Census platform only the number of rows that 
 
 ### Step 2: Unload “Diffs” to Cloud Storage
 
-![](../../.gitbook/assets/security\_step\_2.png)
+![](../../.gitbook/assets/security_step_2.png)
 
 Once the data differences, or “diffs”, have been calculated, Census instructs your warehouse to copy just those rows to our cloud provider’s “blob storage” bucket (either AWS S3 or Google Cloud Storage).
 
@@ -67,7 +71,7 @@ The cloud storage buckets used by Census are configured with two additional secu
 
 ### Step 3: Prepare Data for Loading into SaaS Applications
 
-![](../../.gitbook/assets/security\_step\_3.png)
+![](../../.gitbook/assets/security_step_3.png)
 
 In most cases, the data from the warehouse cannot be loaded directly to the SaaS application without changes.
 
@@ -79,7 +83,7 @@ Mappers use separate temporary credentials that are only capable of reading data
 
 ### Step 4: Report Skipped Records and Feedback to Warehouse
 
-![](../../.gitbook/assets/security\_step\_4.png)
+![](../../.gitbook/assets/security_step_4.png)
 
 When a mapper finishes its work, it has two lists of records - those that were successfully loaded to the SaaS application, and those that failed, either because of validation issues in the data or transient errors (SaaS outages or errors, networking issues, etc).
 

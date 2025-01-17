@@ -1,4 +1,8 @@
-# Version control
+---
+icon: code-branch
+---
+
+# Version Control
 
 Datasets provide version control tracking to give you a historical understanding of how your dataset definition has changed. You can view your Dataset versions under the **Activity** tab. You can track:
 

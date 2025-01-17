@@ -1,3 +1,7 @@
+---
+icon: laptop-code
+---
+
 # Computed Columns
 
 Datasets support the ability to define no-code calculations and aggregation from other datasets as new calculated columns without making changes in your warehouse yet still being fully governed, tracked, and observed by your data stack.

@@ -1,3 +1,7 @@
+---
+icon: clipboard-list
+---
+
 # Triggering & Scheduling
 
 Running a sync manually is not that useful on its own. The real power of Census is having your syncs run automatically. Once you've got your sync up and running, you can configure your sync to run automatically in several ways:

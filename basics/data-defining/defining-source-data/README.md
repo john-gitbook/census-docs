@@ -2,6 +2,7 @@
 description: >-
   Depending on your particular destination, the structure of your source data
   may be quite a bit different. Here's some tips on structuring your data.
+icon: folder-tree
 ---
 
 # Structuring Data

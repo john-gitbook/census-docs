@@ -2,6 +2,7 @@
 description: >-
   This is a page for answering some patterns of questions that we have seen.
   Hopefully this can make your Census UX smoother.
+icon: message-question
 ---
 
 # FAQs

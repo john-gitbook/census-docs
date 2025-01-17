@@ -1,5 +1,6 @@
 ---
 description: How to use the Audience Hub visual builder to create and update segments
+icon: plus-large
 ---
 
 # Creating Segments

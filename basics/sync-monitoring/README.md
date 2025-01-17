@@ -2,6 +2,7 @@
 description: >-
   Census provides a variety of ways to understand the health and status of each
   of your syncs.
+icon: telescope
 ---
 
 # Observability Toolkit
@@ -17,7 +18,7 @@ Additionally, you don't have to hang out looking at syncs all day to be sure the
 
 * [Sync Alerts](alerts.md) for when things need your attention.
 * [Observability Lake](observability-lake.md) for long-term retention of sync logs, on your cloud storage.
-* [Datadog Integration](datadog-integration.md) for hooking Census up to all your internal monitoring systems.&#x20;
+* [Datadog Integration](datadog-integration.md) for hooking Census up to all your internal monitoring systems.
 * [Warehouse Writeback](warehouse-writeback.md) for keeping track of what your syncs have done historically.
 
 Finally, if you're not ready to run your sync quite yet, you can always do a [Sync Dry Run](sync-dry-runs.md) to get a report of what changes it will make, before it makes them.

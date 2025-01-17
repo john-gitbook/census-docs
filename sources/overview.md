@@ -1,5 +1,6 @@
 ---
 description: Use data sources to connect to the data that matters most for your business.
+icon: mountains
 ---
 
 # Overview

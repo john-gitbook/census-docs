@@ -1,8 +1,12 @@
+---
+icon: credit-card
+---
+
 # Credits
 
-Credits make it easy to explore exciting new transformation features like [GPT Columns](../datasets/ai-columns/). Census offers free trial credits to eligible organizations.&#x20;
+Credits make it easy to explore exciting new transformation features like [GPT Columns](../datasets/ai-columns/). Census offers free trial credits to eligible organizations.
 
-While using Credits, you don't need your own API key to connect to OpenAI or other LLM and Enrichment providers. If you run out of credits or would like to use your own account, you can bring your own API key.&#x20;
+While using Credits, you don't need your own API key to connect to OpenAI or other LLM and Enrichment providers. If you run out of credits or would like to use your own account, you can bring your own API key.
 
 To monitor your Credits usage, log into Census and navigate to "Organization Home / Credits".
 

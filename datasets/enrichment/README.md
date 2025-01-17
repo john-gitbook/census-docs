@@ -3,6 +3,7 @@ description: >-
   Census Enrichment makes it easy to enrich Person and Company data with
   third-party data and sync them to any business apps. The outcome also
   materializes in your data warehouse.
+icon: chart-simple-horizontal
 ---
 
 # Enrichment Columns
@@ -18,13 +19,13 @@ Enriching first party data, in your data warehouse or CRM systems, with third pa
 * A single enrichment provider is not sufficient because no single solution has all the correct data
 * You still have to dance around combining first party data, third party data, and manual edits to make these enrichments useful for personalized campaigns
 
-Historical, enrichment flow includes hitting an API directly on top of a CRM tool, storing it in the CRM tool, sending it to your warehouse, run sql to combine the company or person data, then sync this data back to CRM or marketing automation destinations.  Along the way, this leads to race conditions, duplicated records and unnecessary enrichment cost.
+Historical, enrichment flow includes hitting an API directly on top of a CRM tool, storing it in the CRM tool, sending it to your warehouse, run sql to combine the company or person data, then sync this data back to CRM or marketing automation destinations. Along the way, this leads to race conditions, duplicated records and unnecessary enrichment cost.
 
 **Census Enrichment simplifies this entire workflow. With just a few clicks, you can enrich your warehouse (and CRM ) data, combine it seamlessly with your existing datasets, and sync enriched insights to any business app—all in minutes.**
 
 ### Setup Enrichments
 
-To set up enrichments, you can follow our [quick start guide](quick-start.md).&#x20;
+To set up enrichments, you can follow our [quick start guide](quick-start.md).
 
 Once your enrichment is configured, Census will start querying your enrichment service and populating results.
 
@@ -34,13 +35,9 @@ You can immediately start using the new enrichment-powered attributes on your da
 Enrichments is currently supported on Snowflake, Redshift, BigQuery, Databricks, and Postgres with more warehouses coming soon!
 {% endhint %}
 
-
-
 ### Warehouse Writeback
 
 The outcome of Enrichment Columns materializes in your data warehouse under Census Schema. Census Datasets join your enriched columns with your first party data to help you visualize, explore and sync to any destination.
-
-
 
 ### Supported Enrichment Services
 
@@ -61,8 +58,6 @@ Keep in mind:
 | Company       | domain     | id, name, legalName, domain, domainAliases, site.phoneNumbers, site.emailAddresses, tags, category.sector, category.industryGroup, category.industry, category.subIndustry, category.sicCode, category.naicsCode, description, foundedYear, location, timeZone, utcOffset, geo.streetNumber, geo.streetName, geo.subPremise, geo.city, geo.state, geo.stateCode, geo.postalCode, geo.country, geo.countryCode, geo.lat, geo.lng, identifiers.usEIN, metrics.raised, metrics.alexaUsRank, metrics.alexaGlobalRank, metrics.employees, metrics.employeesRange, metrics.marketCap, metrics.annualRevenue, metrics.estimatedAnnualRevenue, metrics.fiscalYearEnd, facebook.handle, linkedin.handle, twitter.handle, twitter.id, twitter.bio, twitter.followers, twitter.following, twitter.location, twitter.site, twitter.avatar, crunchbase.handle, logo, emailProvider, type, phone, tech, techCategories, parent.domain, ultimateParent.domain, indexedAt |
 
 #### Apollo.io (coming soon)
-
-
 
 ### Need help with data enrichment?
 

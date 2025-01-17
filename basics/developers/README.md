@@ -1,5 +1,6 @@
 ---
 description: Learn more about all the ways to programmatically control Census
+icon: square-code
 ---
 
 # Developers
@@ -8,7 +9,7 @@ Census supports several different APIs for controlling, accessing data, and exte
 
 See our [Developer Hub](https://developers.getcensus.com) for a full view of all the interfaces available.
 
-* [Dataset API](entity-api.md) - An optional REST API for accessing data stored in your [Datasets](broken-reference) on demand.
+* [Dataset API](entity-api.md) - An optional REST API for accessing data stored in your [Datasets](broken-reference/) on demand.
 * [Management API](api.md) - A REST API for controlling the Syncs, Models, and Connections configured within Census. This can be used to programmatically read information and perform most actions available in the Census app today.
 * Custom Destinations
   * [HTTP Request Destination](../../destinations/http-request.md) - An easy way to send data to a custom destination, without having to build a full destination.

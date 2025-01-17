@@ -1,3 +1,7 @@
+---
+icon: block-brick
+---
+
 # Core Concepts
 
 ## Dataset source <a href="#data-source" id="data-source"></a>

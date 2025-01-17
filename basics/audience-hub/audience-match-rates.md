@@ -1,5 +1,6 @@
 ---
 description: Monitor and optimize match rates across all your ad platforms in Audience Hub
+icon: user-check
 ---
 
 # Audience Match Rates

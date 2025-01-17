@@ -1,3 +1,7 @@
+---
+icon: file-chart-column
+---
+
 # Enrichment (Moved to Datasets)
 
 Census Enrichment have moved to Datasets. [See here](../../datasets/enrichment/).

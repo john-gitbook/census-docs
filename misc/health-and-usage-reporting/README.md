@@ -1,5 +1,6 @@
 ---
 description: Learn more about the reporting options available in Census.
+icon: heart
 ---
 
 # Health and Usage Reporting

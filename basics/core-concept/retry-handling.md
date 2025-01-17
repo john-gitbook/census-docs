@@ -2,6 +2,7 @@
 description: >-
   Census syncs implement a consistent and sophisticated retry strategy to ensure
   the highest possible success rate when sending records by default.
+icon: arrows-rotate-reverse
 ---
 
 # Retry Handling
@@ -9,7 +10,7 @@ description: >-
 Whenever a sync runs, Census automatically retries any records that are rejected by the destination. The retries happen in two ways:
 
 * **Within the current Sync run:** When a sync is in progress, any rejected records will automatically be retried following an exponential backoff strategy. This method is in place to give transient issues time to resolve themselves before the next attempt. If Census' integration to the destination uses batch endpoints, the retries will automatically utilize our [split batch upload](retry-handling.md#split-batch-uploads) methodology. [Live Syncs](live-syncs.md) also retry failed records with an exponential backoff.
-* **On subsequent Sync runs:** Any record that still has not been accepted by the destination after a sync run completes will be retried on the next sync run until it succeeds.&#x20;
+* **On subsequent Sync runs:** Any record that still has not been accepted by the destination after a sync run completes will be retried on the next sync run until it succeeds.
 
 ## Rejected Records
 
@@ -26,8 +27,6 @@ These rejected records will be retried upon re-execution of the sync, so that if
 {% hint style="info" %}
 Note that in Salesforce, there is the scenario of records locking as a rejected record reason. [Read more here](../../destinations/salesforce.md#common-errors), but these records will be retried on the following execution. If the problem persists, you can lower the batch size under the "Advanced" toggle on the sync configuration as well.
 {% endhint %}
-
-
 
 ## Rate Limits
 

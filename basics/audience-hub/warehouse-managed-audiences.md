@@ -1,5 +1,6 @@
 ---
 description: Manage audiences programmatically from your data warehouse.
+icon: garage-open
 ---
 
 # Warehouse-Managed Audiences

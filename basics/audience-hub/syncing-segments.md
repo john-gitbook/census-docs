@@ -2,6 +2,7 @@
 description: >-
   Send your segments to any ad platform or marketing tool and automatically keep
   them fresh when your data changes.
+icon: play
 ---
 
 # Activating Segments

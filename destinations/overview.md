@@ -1,5 +1,6 @@
 ---
 description: Destinations are where you send your data to put it to work.
+icon: mountains
 ---
 
 # Overview

@@ -1,8 +1,8 @@
 # Table of contents
 
-* [🦩 Overview](README.md)
+* [Welcome](README.md)
 
-## 💾 Datasets
+## Datasets
 
 * [Overview](datasets/overview.md)
 * [Core Concepts](datasets/core-concepts/README.md)
@@ -18,7 +18,7 @@
 * [Computed Columns](datasets/core-concepts-3.md)
 * [Version Control](datasets/census-models.md)
 
-## 📫 Syncs <a href="#basics" id="basics"></a>
+## Syncs <a href="#basics" id="basics"></a>
 
 * [Overview](basics/core-concept/README.md)
 * [Triggering & Scheduling](basics/core-concept/triggering-syncs.md)
@@ -40,7 +40,7 @@
   * [Event Syncs](basics/data-defining/defining-source-data/events.md)
   * [Arrays and Nested Objects](basics/data-defining/defining-source-data/structured-data.md)
 
-## 👥 Audience Hub
+## Audience Hub
 
 * [Overview](basics/audience-hub/README.md)
 * [Creating Segments](basics/audience-hub/getting-started.md)
@@ -54,7 +54,7 @@
 * [Enrichment (Moved to Datasets)](basics/data-defining/enrichment.md)
 * [Data Preparation](basics/audience-hub/data-preparation.md)
 
-## 🧮 Data Sources <a href="#sources" id="sources"></a>
+## Data Sources <a href="#sources" id="sources"></a>
 
 * [Overview](sources/overview.md)
 * [Available Sources](sources/available-sources/README.md)
@@ -88,7 +88,7 @@
 * [Sigma Integration](basics/data-defining/models/sigma.md)
 * [Looker Integration](basics/data-defining/models/looker.md)
 
-## 🛫 Destinations
+## Destinations
 
 * [Overview](destinations/overview.md)
 * [Available Destinations](destinations/available-destinations/README.md)
@@ -261,7 +261,7 @@
   * [Zuora](destinations/zuora.md)
 * [Custom & Partner Destinations](destinations/custom-destinations-and-partner.md)
 
-## 📎 Misc
+## Misc
 
 * [Credits](misc/credits.md)
 * [Census Embedded](basics/census-embedded.md)

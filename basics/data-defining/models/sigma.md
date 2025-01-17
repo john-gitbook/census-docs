@@ -1,5 +1,6 @@
 ---
 description: Connect Sigma to Census and sync data directly from Sigma Workbooks
+icon: sigma
 ---
 
 # Sigma Integration
@@ -19,7 +20,7 @@ This will generate a Client ID and Client Secret. You will need to provide both 
 
 #### Connecting Census to Sigma
 
-Now back in Census, select **Sources** from the left navigation bar and, if you have multiple warehouse connections, click on the **Projects** button of the one that matches your Sigma instance.&#x20;
+Now back in Census, select **Sources** from the left navigation bar and, if you have multiple warehouse connections, click on the **Projects** button of the one that matches your Sigma instance.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2024-07-31 at 2.32.13 PM.png" alt=""><figcaption></figcaption></figure>
 

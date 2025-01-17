@@ -2,6 +2,7 @@
 description: >-
   Create segments for marketing and ad targeting using Census's built-in visual
   segment builder, directly on top of your data warehouse.
+icon: mountains
 ---
 
 # Overview
@@ -13,18 +14,18 @@ Audience Hub is designed from the ground up for marketing and other customer-fac
 * Access _all_ your 360° customer data at your fingertips. Build confidently knowing that data is up to date, using the same definitions that power BI and the rest of the business.
 * Easily express segment conditions, including complex ones that work with event data, reference other segments, or other data sets including third party data sources.
 * Experiment and iterate on segments over time, add conditions, and understand how they change.
-* Keep segment definitions fresh and in sync across every customer engagement and advertising service you use to target customers.&#x20;
+* Keep segment definitions fresh and in sync across every customer engagement and advertising service you use to target customers.
 
 Audience Hub provides a complete suite of tools and capabilities to enable fast and complete audience targeting including:
 
-* Full-featured visual Segment Builder&#x20;
+* Full-featured visual Segment Builder
 * Cross-entity and cross-segment conditions
-* Segment size tracking&#x20;
+* Segment size tracking
 * Segment comparison tools
 * Warehouse Writeback - Track segment performance and membership in your warehouse
 
 {% hint style="info" %}
-Audience Hub is available for Enterprise plans.&#x20;
+Audience Hub is available for Enterprise plans.
 {% endhint %}
 
 Interested in learning more about everything possible in Audience Hub? Read on!

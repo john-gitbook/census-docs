@@ -1,5 +1,6 @@
 ---
 description: Connect Looker to Census and sync data directly from Looker Looks.
+icon: eyes
 ---
 
 # Looker Integration
@@ -17,17 +18,15 @@ To connect Looker to your Census instance, you'll need two things:
 * An existing Census data source connection that matches the data source used by Looker. See the below section on about permissions.
 * Looker API3 credentials for the user that has access to the Looks you plan to use in Census.
 
-To create new API3 credentials, you'll need to visit the **Admin** > **Users** page, select the desired user and click the **Edit** button and then the **Edit Keys** button on the user's profile page. You'll need to note both the **Client ID** and **Client Secret** values to provide to Census. The [Looker documentation](https://docs.looker.com/admin-options/settings/users#edit\_api3\_keys) provides more details on how to find and create keys.\
+To create new API3 credentials, you'll need to visit the **Admin** > **Users** page, select the desired user and click the **Edit** button and then the **Edit Keys** button on the user's profile page. You'll need to note both the **Client ID** and **Client Secret** values to provide to Census. The [Looker documentation](https://docs.looker.com/admin-options/settings/users#edit_api3_keys) provides more details on how to find and create keys.\
 \
-You'll also need the URL of your Looker instance. You should be able to simply pull that directly from your browser URL bar. For example, if the URL is `https://censususer.looker.com/` then the subdomain is `censususer`.&#x20;
+You'll also need the URL of your Looker instance. You should be able to simply pull that directly from your browser URL bar. For example, if the URL is `https://censususer.looker.com/` then the subdomain is `censususer`.
 
 If you're using a self-hosted instance of Looker, provide the full URL as well as the port number of your API, for example `https://yourlooker.yourcompany.com:443`. The port number may be 443 or 19999 depending on when your Looker instance was created, or it may be another value if you've overridden the default. See [Looker documentation](https://cloud.google.com/looker/docs/admin-panel-platform-api) for more details.
 
 #### Connecting Census to Looker
 
 Now back in Census, select **Sources** from the left navigation bar and, if you have multiple warehouse connections, click on the **Projects** button of the one that matches your Looker instance. Once you've clicked on **Projects**, pick the **Looker** tab. You'll see a **Connect Looker** button to start the process. From here, simply provide your subdomain, the client id and client secret.
-
-
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2024-07-31 at 2.32.13 PM.png" alt=""><figcaption><p>Click on the Projects Button</p></figcaption></figure>
 
@@ -47,7 +46,7 @@ Census and Looker both maintain their own data warehouse credentials and connect
 
 #### Totals & Row Totals
 
-![](../../../.gitbook/assets/looker\_totals\_and\_row\_totals.png)
+![](../../../.gitbook/assets/looker_totals_and_row_totals.png)
 
 Looker will autogenerate additional SQL queries when `Totals` or `Row Totals` are selected. These features are not supported for syncs from Census, and therefore the related SQL will not be imported to Census.
 

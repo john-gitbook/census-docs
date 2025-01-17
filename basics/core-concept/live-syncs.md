@@ -1,5 +1,6 @@
 ---
 description: Activate Streaming Datasets in Real-time with Live Syncs
+icon: satellite-dish
 ---
 
 # Live Syncs
@@ -13,8 +14,6 @@ At this time, a sync's Run Mode (Live vs Triggered) cannot be changed after the 
 <figure><img src="../../.gitbook/assets/screenshot 2024-01-11 at 12.16.png" alt=""><figcaption><p>Setting up the Run Mode for a new Sync</p></figcaption></figure>
 
 The following table summarizes the key differences between a Live and Triggered sync.
-
-
 
 | Live                                          | Triggered                                                                                                               |
 | --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
