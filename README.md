@@ -1,5 +1,5 @@
 ---
-icon: hand-wave
+icon: house
 ---
 
 # Welcome
