@@ -470,7 +470,9 @@ Here are some invalid template examples that will be caught by Census:
 
 * `{{ record['ID' }}` → _Liquid syntax error: Expected close\_square but found end\_of\_string in "\{{ record\['ID' \}}"_
 * `{{ record['NAMEE'] }}` → _Column being referenced in template can't be found in data source \[NAMEE]_
-* `{% assign category = record['CAT'] %}{{ categoryy.ratio | times: 100 }}` → _\[categoryy.ratio | times: 100] unknown variable \`categoryy\`_
+* \`
+
+\{{ categoryy.ratio | times: 100 \}} `→ _\[categoryy.ratio | times: 100] unknown variable \`categoryy\`\_
 
 {% hint style="info" %}
 Compared to some other implementations of Liquid, Census runs using strict parsing and rendering. This means that invalid templates won't run, and any errors encountered when running a valid template won't cause bad data to be sent to your destination.
@@ -492,6 +494,7 @@ Make a new variable from a value:
 {% raw %}
 {% assign name = record['NAME'] | upcase %}
 {% endraw %}
+
 ```
 
 #### [capture](https://shopify.github.io/liquid/tags/variable/#capture)
@@ -504,6 +507,8 @@ Make a new variable from captured text:
   {{ record['FNAME'] }} {{ record['LNAME'] }}
 {%- endcapture %}
 {% endraw %}
+
+
 ```
 
 {% hint style="info" %}
@@ -528,6 +533,7 @@ Construct a condition using boolean [operators](https://shopify.github.io/liquid
   N/A
 {%- endif %}
 {% endraw %}
+
 ```
 
 #### [case/when](https://shopify.github.io/liquid/tags/control-flow/#casewhen)
@@ -545,6 +551,7 @@ Construct conditions based on matching values:
      anon
 {%- endcase %}
 {% endraw %}
+
 ```
 
 ### Looping
@@ -557,11 +564,14 @@ Generate text for each item:
 
 ```liquid
 [
-  {% raw %}
+  
+{% raw %}
 {% for tag in record %}
   "{{ tag | upcase }}",
   {% endfor %}
 {% endraw %}
+
+
 ]
 ```
 
@@ -584,7 +594,7 @@ To deal with this, Liquid uses the `-` (hyphen) symbol for whitespace control, s
 
 Here are a few examples of whitespace inside vs. outside Liquid code blocks (using `{id: 1}` as the record data)...
 
-<table data-full-width="true"><thead><tr><th>Template</th><th width="115">Result</th><th width="100" data-type="number">Note</th></tr></thead><tbody><tr><td><code>"id{{ record['id'] }}"</code></td><td><code>"id1"</code></td><td>1</td></tr><tr><td><code>" {{record['id']}} "</code></td><td><code>" 1 "</code></td><td>2</td></tr><tr><td><code>"{% if true %}{{ record['id'] }}{% endif %}"</code></td><td><code>"1"</code></td><td>3</td></tr><tr><td><code>"{% if true %} {{ record['id'] }} {% endif %}"</code></td><td><code>" 1 "</code></td><td>4</td></tr><tr><td><code>"{% if true %} {{- record['id'] -}} {% endif %}"</code></td><td><code>"1"</code></td><td>5</td></tr><tr><td><code>"{% if true -%} {{ record['id'] }} {%- endif %}"</code></td><td><code>"1"</code></td><td>6</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th>Template</th><th width="115">Result</th><th width="100" data-type="number">Note</th></tr></thead><tbody><tr><td><code>"id{{ record['id'] }}"</code></td><td><code>"id1"</code></td><td>1</td></tr><tr><td><code>" {{record['id']}} "</code></td><td><code>" 1 "</code></td><td>2</td></tr><tr><td><code>""</code></td><td><code>"1"</code></td><td>3</td></tr><tr><td><code>""</code></td><td><code>" 1 "</code></td><td>4</td></tr><tr><td><code>""</code></td><td><code>"1"</code></td><td>5</td></tr><tr><td><p><code>"{{ record['id'] }}</code></p><p><code>"</code></p></td><td><code>"1"</code></td><td>6</td></tr></tbody></table>
 
 Notes:
 
@@ -596,7 +606,7 @@ Notes:
 6. Whitespace control symbol strips whitespace inside tags
 
 {% hint style="info" %}
-[Whitespace](https://en.wikipedia.org/wiki/Whitespace\_character) includes single spaces, line breaks, and tabs—any of the blank spaces you see in your template code.
+[Whitespace](https://en.wikipedia.org/wiki/Whitespace_character) includes single spaces, line breaks, and tabs—any of the blank spaces you see in your template code.
 {% endhint %}
 
 ### JSON mode
@@ -681,7 +691,8 @@ When generating JSON data using for [loops](liquid-templates.md#looping), this p
 ```liquid
 {
   "products": [
-    {% raw %}
+    
+{% raw %}
 {% for product in record["PRODUCTS"] %}
     {
       "id": {{ product.id }},
@@ -689,6 +700,8 @@ When generating JSON data using for [loops](liquid-templates.md#looping), this p
     },
     {% endfor %}
 {% endraw %}
+
+
   ]
 }
 ```
@@ -749,12 +762,15 @@ If you want, you're free to use any other YAML features, like block-style collec
 
 ```liquid
 products:
-  {% raw %}
+  
+{% raw %}
 {% for product in record["PRODUCTS"] %}
   - id: {{ product.id }}
     name: "{{ product.name }}"
   {% endfor %}
 {% endraw %}
+
+
 ```
 
 <details>
